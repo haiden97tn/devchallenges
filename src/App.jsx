@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-    constructor(props){
+
+    // Anh Hai 123
+
+    constructor(props) {
         super(props);
         this.state = {
-            count : 1
+            count: 1
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log('hello toi bat dau lon len roi !');
     }
-    componentDidUpdate(){
+    componentDidUpdate() {
         console.log('hello toi bat dau co gia dinh va cong viec on dinh !');
     }
-    componentWillUnmount(){
+    componentWillUnmount() {
         console.log('xuong ho');
     }
-    componentWillMount(){
+    componentWillMount() {
         console.log('hello minh la mot dua tre');
     }
     // componentWillMout running trước khi render
@@ -29,7 +32,7 @@ class App extends Component {
         return (
             <div>
                 hello world class component
-                <button onClick={() => this.setState({count : this.state.count + 1})}>Clicked</button>
+                <button onClick={() => this.setState({ count: this.state.count + 1 })}>Clicked</button>
             </div>
         );
     }
